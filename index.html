@@ -3,218 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KARTHIK THAKUR</title>
+<title>KARTHIK THAKUR (CRICKET_ANALYST)2016</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- META PIXEL -->
+<!-- META PIXEL CODE -->
 <script>
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;
-n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+n=f.fbq=function(){
+n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)
+};
 if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
 n.queue=[];
-t=b.createElement(e);t.async=!0;
+t=b.createElement(e);
+t.async=!0;
 t.src=v;
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','1176056144589202');
+fbq('init','2009666809876899');
 fbq('track','PageView');
 </script>
 
 <style>
-body{margin:0;overflow:hidden;font-family:sans-serif}
-
-/* VIDEO BACKGROUND */
-video{
-position:fixed;inset:0;width:100%;height:100%;
-object-fit:cover;z-index:-2;
-}
-.overlay{
-position:fixed;inset:0;background:rgba(0,0,0,0.35);z-index:-1;
-}
-
-/* NAME BOX */
-.name-box{
-padding:12px 28px;font-weight:900;font-size:28px;border-radius:12px;
-color:#00f6ff;background:rgba(0,0,0,0.5);
-animation:colorChange 3s infinite alternate;
-}
-@keyframes colorChange{
-0%{color:#00f6ff;}
-25%{color:#ff00ff;}
-50%{color:#ffdc00;}
-75%{color:#00ff99;}
-100%{color:#ff0033;}
-}
-
-/* PROFILE IMAGE */
-.profile-neon{
-width:120px;height:120px;border-radius:50%;
-border:4px solid #00f6ff;
-box-shadow:0 0 15px #00f6ff,0 0 45px #00f6ff;
-margin:20px auto;animation:glow 2s infinite alternate;
-object-fit:cover;
-}
-@keyframes glow{
-from{box-shadow:0 0 15px #00f6ff;}
-to{box-shadow:0 0 45px #00f6ff;}
-}
-
-/* JOIN BUTTON */
-.neon-btn{
-background:#00f6ff;color:#000;font-weight:900;padding:16px 28px;
-border-radius:14px;box-shadow:0 0 15px #00f6ff,0 0 40px #00f6ff;
-animation:pulse 1.5s infinite;text-align:center;
-}
-@keyframes pulse{
-0%,100%{transform:scale(1)}
-50%{transform:scale(1.08)}
-}
-
-/* TIMER */
-.timer-circle{
-width:44px;height:44px;border-radius:50%;
-border:2px solid #ff0033;display:flex;align-items:center;justify-content:center;
-margin:10px auto;color:#ff0033;font-weight:900;
-box-shadow:0 0 10px #ff0033;
-}
-
-/* SOUND BUTTON */
-#soundBtn{
-position:fixed;top:14px;right:14px;z-index:60;
-background:#000;color:#fff;font-weight:800;font-size:12px;
-padding:8px 12px;border-radius:999px;
-}
-
-/* JOIN POPUP */
-#joinPopup{
-position:fixed;top:14px;left:14px;z-index:60;
-background:#00ff99;color:#000;font-weight:900;
-padding:8px 14px;border-radius:999px;font-size:12px;
-display:none;box-shadow:0 0 12px #00ff99;
-}
-
-/* LIVE TICKER (INSTANT) */
-.ticker-wrap{
-width:100%;overflow:hidden;background:#000;margin-top:6px;
-border:1px solid #00ff00;border-radius:6px;
-}
-.ticker{
-display:inline-block;
-white-space:nowrap;
-color:#00ff00;
-font-weight:900;
-animation:tickerMove 14s linear infinite;
-}
-@keyframes tickerMove{
-0%{transform:translateX(0%);}
-100%{transform:translateX(-100%);}
-}
-
-/* CREDIT */
-.ads-credit{
-margin-top:12px;font-size:12px;font-weight:900;color:#ffe600;
-text-shadow:0 0 10px #ffe600;
-}
+.neon-box{display:inline-block;padding:12px 22px;border-radius:14px;border:2px solid #00faff;box-shadow:0 0 10px #00faff,0 0 25px #00faff;animation:neonGlow 2s infinite alternate}
+@keyframes neonGlow{from{box-shadow:0 0 10px #00faff}to{box-shadow:0 0 35px #00faff}}
+.neon-text{font-weight:900;font-size:1.8rem;color:#fff;text-shadow:0 0 6px #00faff,0 0 12px #00faff}
+.sub-text{font-weight:800;color:#ffb300;text-shadow:0 0 8px rgba(255,179,0,.8)}
+.mirror-wrap{position:relative;width:140px;height:140px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at top,#444,#000 70%);box-shadow:inset 0 8px 15px rgba(255,255,255,.2),inset 0 -10px 20px rgba(0,0,0,.9),0 0 25px rgba(0,255,255,.6)}
+.mirror-wrap::before{content:"";position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(#00faff,#ff00ff,#00ff6a,#00faff);animation:spin 4s linear infinite;filter:blur(2px);z-index:-1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mirror-img{width:120px;height:120px;border-radius:50%;object-fit:cover}
+.neon-btn{background:#00faff;color:#ff003c;padding:14px 20px;border-radius:14px;font-weight:900;box-shadow:0 0 15px #00faff,0 0 35px #00faff;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 15px #00faff}50%{box-shadow:0 0 45px #00faff}}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.ads-credit{font-size:10px;letter-spacing:1px;color:#00faff;text-shadow:0 0 5px #00faff,0 0 10px #00faff;opacity:.9}
 </style>
 </head>
 
-<body>
-
-<button id="soundBtn">🔊 SOUND ON</button>
-<div id="joinPopup"></div>
-
-<!-- VIDEO -->
-<video id="bgVideo" autoplay muted playsinline loop></video>
+<body class="bg-black text-white">
+<div class="relative h-screen flex items-center justify-center bg-cover bg-center"
+style="background-image:url('https://github.com/mrxsetup/KARTHIK-THAKUR/blob/main/KARHIK.jpg?raw=true');">
 <div class="overlay"></div>
 
-<div class="min-h-screen flex flex-col items-center justify-center text-center px-6 text-white font-extrabold">
+<div class="relative z-10 text-center px-6 w-full flex flex-col items-center">
 
-  <div class="name-box">KARTHIK THAKUR [ OFFICIAL ]</div>
+  <div class="neon-box mt-4">
+    <div class="neon-text">KARTHIK THAKUR</div>
+  </div>
 
-  <!-- ✅ NEW IMAGE -->
-  <img src="https://github.com/mrxsetup/KARTHIK-THAKUR/blob/main/KARHIK.jpg?raw=true" class="profile-neon">
+  <div class="mt-2 sub-text">(CRICKET_ANALYST) 2016</div>
 
-  <div class="timer-circle"><span id="countdown">30</span></div>
-
-  <p class="mt-3">DAILY CRICKET PREDICTION FREE 👇</p>
-  <p class="mt-4 text-sm">💸 CRICKET TIPPING KA BOSS 👑</p>
-
-  <!-- LIVE LINE -->
-  <div class="ticker-wrap mt-1">
-    <div class="ticker" id="liveMatches">
-IPL • PSL • BBL • SA20 • TODAY ALL MATCHES LIVE • IPL • PSL • BBL • SA20 • TODAY ALL MATCHES LIVE •
+  <div class="mt-5">
+    <div class="mirror-wrap">
+      <img src="https://github.com/mrxsetup/KARTHIK-THAKUR/blob/main/KARHIK.jpg?raw=true" class="mirror-img">
     </div>
   </div>
 
-  <!-- TELEGRAM -->
-  <a href="https://t.me/+GeFwlKjxlkVkN2I1" onclick="fbq('track','Lead')">
-    <div class="neon-btn mt-6">🚀 JOIN KARTHIK THAKUR TELEGRAM</div>
-  </a>
+  <p class="mt-6 text-xl font-extrabold text-yellow-400">
+    Redirecting You To Telegram Channel...
+  </p>
 
-  <!-- CREDIT -->
-  <a href="https://t.me/mrxsetup" target="_blank">
-    <div class="ads-credit">
-      ADS SETUP BY - @mrxsetup • CONTACT FOR BUSINESS GROW
-    </div>
-  </a>
+  <div class="mt-8">
+    <a href="https://t.me/+GeFwlKjxlkVkN2I1">
+      <button class="neon-btn">JOIN KARTHIK THAKUR TELEGRAM CHANNEL</button>
+    </a>
+  </div>
+
+  <p class="mt-4 text-sm font-extrabold uppercase">
+    💸 KARTHIK THAKUR <br> Cricket Tipping Ki Duniya Ka King 👑
+  </p>
+
+  <div class="mt-auto pt-4 pb-2 ads-credit">ADS_SETUP BY @MRXSETUP</div>
 
 </div>
-
-<audio id="joinSound" src="https://assets.mixkit.co/sfx/preview/mixkit-bell-notification-933.mp3"></audio>
+</div>
 
 <script>
-/* VIDEO ROTATION */
-const videos=[
-"https://res.cloudinary.com/dzhykus7z/video/upload/v1768206316/50v_iedioy.mp4",
-"https://res.cloudinary.com/dzhykus7z/video/upload/v1768206325/51v_mtwllp.mp4"
-];
-let index=0;
-const video=document.getElementById("bgVideo");
-
-function loadVideo(){
-  video.src=videos[index];
-  video.load();
-  video.play().catch(()=>{});
-}
-video.onended=()=>{
-  index=(index+1)%videos.length;
-  loadVideo();
-};
-loadVideo();
-
-/* SOUND */
-const soundBtn=document.getElementById("soundBtn");
-soundBtn.onclick=e=>{
-  e.stopPropagation();
-  video.muted=!video.muted;
-  soundBtn.innerText=video.muted?"🔊 SOUND ON":"🔇 SOUND OFF";
-};
-
-/* TIMER */
-let timeLeft=30;
-setInterval(()=>{
-  document.getElementById("countdown").innerText=timeLeft;
-  timeLeft--;
-  if(timeLeft<0) timeLeft=30;
-},1000);
-
-/* POPUP */
-const names=["RAHUL","SHUBHAM","AMIT","KARTHIK","ROHIT","ARJUN","SANJAY"];
-const popup=document.getElementById("joinPopup");
-const joinSound=document.getElementById("joinSound");
-
-setInterval(()=>{
-  const name=names[Math.floor(Math.random()*names.length)];
-  popup.innerText=name+" JUST JOINED 🚀";
-  popup.style.display="block";
-  joinSound.currentTime=0;
-  joinSound.play().catch(()=>{});
-  setTimeout(()=>popup.style.display="none",2500);
-},4000);
+setTimeout(function(){
+  window.location.href="https://t.me/+GeFwlKjxlkVkN2I1";
+},2000);
 </script>
 
 </body>
