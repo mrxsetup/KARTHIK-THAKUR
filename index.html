@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KARTHIK THAKUR (CRICKET_ANALYST)2016</title>
+<title>KARTHIK THAKUR (CRICKET_ANALYST) 2016</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,11 +26,13 @@ t.src=v;
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init','716560108184205');
 fbq('track','PageView');
 </script>
 
 <style>
+body{margin:0;padding:0}
 .neon-box{display:inline-block;padding:12px 22px;border-radius:14px;border:2px solid #00faff;box-shadow:0 0 10px #00faff,0 0 25px #00faff;animation:neonGlow 2s infinite alternate}
 @keyframes neonGlow{from{box-shadow:0 0 10px #00faff}to{box-shadow:0 0 35px #00faff}}
 .neon-text{font-weight:900;font-size:1.8rem;color:#fff;text-shadow:0 0 6px #00faff,0 0 12px #00faff}
@@ -39,16 +41,18 @@ fbq('track','PageView');
 .mirror-wrap::before{content:"";position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(#00faff,#ff00ff,#00ff6a,#00faff);animation:spin 4s linear infinite;filter:blur(2px);z-index:-1}
 @keyframes spin{to{transform:rotate(360deg)}}
 .mirror-img{width:120px;height:120px;border-radius:50%;object-fit:cover}
-.neon-btn{background:#00faff;color:#ff003c;padding:14px 20px;border-radius:14px;font-weight:900;box-shadow:0 0 15px #00faff,0 0 35px #00faff;animation:pulse 1.8s infinite}
+.neon-btn{background:#00faff;color:#ff003c;padding:14px 20px;border-radius:14px;font-weight:900;box-shadow:0 0 15px #00faff,0 0 35px #00faff;animation:pulse 1.8s infinite;cursor:pointer}
 @keyframes pulse{0%,100%{box-shadow:0 0 15px #00faff}50%{box-shadow:0 0 45px #00faff}}
-.overlay{position:absolute;inset:0;background:rgba(0,0,0,.45)}
-.ads-credit{font-size:10px;letter-spacing:1px;color:#00faff;text-shadow:0 0 5px #00faff,0 0 10px #00faff;opacity:.9}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.ads-credit{font-size:10px;letter-spacing:1px;color:#00faff;text-shadow:0 0 5px #00faff;opacity:.9}
 </style>
 </head>
 
 <body class="bg-black text-white">
+
 <div class="relative h-screen flex items-center justify-center bg-cover bg-center"
 style="background-image:url('https://github.com/mrxsetup/KARTHIK-THAKUR/blob/main/KARHIK.jpg?raw=true');">
+
 <div class="overlay"></div>
 
 <div class="relative z-10 text-center px-6 w-full flex flex-col items-center">
@@ -66,28 +70,31 @@ style="background-image:url('https://github.com/mrxsetup/KARTHIK-THAKUR/blob/mai
   </div>
 
   <p class="mt-6 text-xl font-extrabold text-yellow-400">
-    Redirecting You To Telegram Channel...
+    Click Below To Join Telegram Channel
   </p>
 
   <div class="mt-8">
-    <a href="https://t.me/+GeFwlKjxlkVkN2I1">
-      <button class="neon-btn">JOIN KARTHIK THAKUR TELEGRAM CHANNEL</button>
-    </a>
+    <button class="neon-btn" onclick="joinTelegram()">
+      JOIN KARTHIK THAKUR TELEGRAM CHANNEL
+    </button>
   </div>
 
   <p class="mt-4 text-sm font-extrabold uppercase">
     💸 KARTHIK THAKUR <br> Cricket Tipping Ki Duniya Ka King 👑
   </p>
 
-  <div class="mt-auto pt-4 pb-2 ads-credit">ADS_SETUP BY @MRXSETUP</div>
+  <div class="mt-auto pt-4 pb-2 ads-credit">
+    ADS_SETUP BY @MRXSETUP
+  </div>
 
 </div>
 </div>
 
 <script>
-setTimeout(function(){
-  window.location.href="https://t.me/+GeFwlKjxlkVkN2I1";
-},2000);
+function joinTelegram(){
+  fbq('track','Lead'); // Button click event
+  window.open("https://t.me/+GeFwlKjxlkVkN2I1","_blank");
+}
 </script>
 
 </body>
